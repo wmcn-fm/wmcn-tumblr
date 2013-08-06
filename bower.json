@@ -1,0 +1,10 @@
+{
+  "name": "wmcn-tumblr",
+  "version": "0.2.3",
+  "main": "index-2.3.html",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "normalize-css": "~2.1.1",
+    "swiper": "https://github.com/nolimits4web/Swiper.git"
+  }
+}

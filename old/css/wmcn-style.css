@@ -69,10 +69,11 @@ li.def {
 	text-align: center;	
 }
 
-a:link {
+a {
 	text-decoration:none;
 }
 
 a:hover {
-	text-decoration:underline;
+	border-bottom: 8px solid 
+	border-color: inherit;
 }

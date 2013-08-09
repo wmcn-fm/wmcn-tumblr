@@ -1,0 +1,87 @@
+$grey: #bdbdbd;
+$yellow: #ff8900;
+$blue: #086fa1;
+$red: #a31010;
+$bodyGrey: #7d7d7d;
+$main: futura;
+$body: helvetica, arial, sans-serif;
+
+.wrapper {
+	max-width: 1000px;
+	background-color: white;
+	margin: auto;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+	font: helvetica, arial, sans-serif
+}
+
+h1 {
+	font-family: $main;
+	a {
+		color: inherit;
+		&:hover {border-bottom: 2px solid; }
+	}
+}
+
+.sub {
+	width: 100%;
+	border-top: 5px solid;
+	border-bottom: 5px solid;
+	padding: 0px;
+	margin-bottom: 30px;
+}
+
+.grey {
+	border-color: $grey;
+	a {
+		color: $grey;
+	}
+}
+
+.yellow {
+	border-color: $yellow;
+	a {
+		color: $yellow;
+	}
+}
+
+.blue {
+	border-color: $blue;
+	a {
+		color: $blue;
+	}
+}
+
+.red {
+	border-color: $red;
+	a {
+		color: $red
+	}
+}
+
+.bodyGrey {
+	border-color: $bodyGrey;
+	a {
+	color: $bodyGrey	
+	}
+}
+
+.header {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	table {
+		td {
+			width: 25%;
+		}
+	}
+}

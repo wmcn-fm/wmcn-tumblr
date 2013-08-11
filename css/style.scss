@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	margin: auto;
 	font: helvetica, arial, sans-serif;
-	color: $bodyGrey
+	color: $bodyGrey;
 }
 
 h1 {
@@ -32,15 +32,24 @@ h1 {
 h2 {
 	font-family: $main;
 	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	color: inherit;
 }
 
 
 a {
 	text-decoration: none;
-	&:hover {border-bottom: 2px solid; }
+	&:hover {border-bottom: 3px solid; }
 }
 
-.sub {
+p {
+	font-family: $body;
+	text-align: center;
+}
+
+.sub-container {
+	float: left;
 	width: 100%;
 	max-width: 1000px;
 	border-color: inherit;
@@ -49,13 +58,15 @@ a {
 	padding: 0px;
 	margin-bottom: 30px;
 	font: inherit;
+	text-align: center;
 }
 
 @mixin thirds {
-	margin: 1%;
-	padding: 2.3%;
-	width: 30%;
-	max-width: 300px;
+	margin: 0.5%;
+	padding: none;
+	border: none;
+	width: 32%;
+	max-width: 330px;
 }
 
 .left {
@@ -64,13 +75,12 @@ a {
 }
 
 .center {
-	float: center;
 	@include thirds;
 }
 
 .right {
 	float: right;
-	margin: 1%;
+	@include thirds;
 }
 
 .grey {
@@ -89,6 +99,7 @@ a {
 
 .blue {
 	border-color: $blue;
+	color: $blue;
 	a {
 		color: $blue;
 	}
@@ -122,6 +133,13 @@ a {
 	background: white;
 	bottom: 0px;
 	font-size: 200%;
+	margin: 0.5%;
+	padding: none;
+	border: none;
+	table {
+		cellspacing: 0;
+		cellpadding: 0;
+	}
 	td {
 		width: 25%;
 		text-align: center;
@@ -132,4 +150,9 @@ table {
 	width: 100%;
 	max-width: 1000px;
 	text-align: center;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	cellspacing: 0px;
+	cellpadding: 0px;
 }

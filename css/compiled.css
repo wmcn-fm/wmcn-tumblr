@@ -28,11 +28,21 @@ a {
 
 p {
   font-family: helvetica, arial, sans-serif;
-  text-align: center; }
+  text-align: center;
+  line-height: 130%; }
+
+p.head {
+  font-family: futura;
+  text-transform: uppercase;
+  color: #3d3d3d; }
 
 table {
   width: 100%;
   max-width: 1000px; }
+
+ul {
+  line-height: 130%;
+  list-style-type: none; }
 
 /* =========== CLASSES ========== */
 .wrapper {
@@ -40,18 +50,21 @@ table {
   background-color: white;
   margin: auto; }
 
-.header img {
-  width: 100%;
-  height: auto; }
+.header {
+  margin-bottom: 10px; }
+  .header img {
+    width: 100%;
+    height: auto; }
 
 .footer {
-  margin-bottom: 60px; }
+  margin-bottom: 70px; }
   .footer img {
     width: 100%;
     height: auto; }
 
 .navbar {
   width: 100%;
+  max-width: 1000px;
   position: fixed;
   background: white;
   bottom: 0px;
@@ -144,6 +157,8 @@ table {
   #blog h2 {
     color: #086fa1;
     text-transform: uppercase; }
+  #blog img {
+    max-width: 250px; }
 
 #listen {
   border-color: #a31010; }

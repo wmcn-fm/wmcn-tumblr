@@ -10,7 +10,7 @@ http://macalester.edu/wmcn/
 
 * ~~fix section floating~~
 
-* add jquery easing to in-page links, calendar drop-downs, and link hovers
+* add jquery easing to ~~in-page links~~, calendar drop-downs, and link hovers
 
 * update icons, add dropdown tooltips
 

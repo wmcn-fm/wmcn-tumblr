@@ -57,11 +57,20 @@ p.head {
 table {
 	width: 100%;
 	max-width: 1000px;
+	border: 1;
+	cellpadding: 4;
+	cellspacing: 0;
+	height: auto;
+	border-color: inherit;
+	rules: rows;
+	frames: hsides;
 }
 
 ul {
 	line-height: 130%;
 	list-style-type: none;
+	margin: none;
+	padding: none;
 }
 
 
@@ -87,6 +96,20 @@ ul {
 		height: auto;
 	}
 	margin-bottom: 70px;
+}
+
+.desktop {	
+}
+
+.mobile {	
+}
+
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
 }
 
 .navbar {
@@ -227,7 +250,9 @@ ul {
 	}
 
 	img {
+	width: 78%;
 	max-width: 250px;
+	height: auto;
 	}
 }
 

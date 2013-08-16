@@ -18,6 +18,6 @@ http://macalester.edu/wmcn/
 
 * integrate blog section to actual tumblr
 
-*add parallax to each sub-section (non-mobile only)
+* add parallax to each sub-section (non-mobile only)
 
-*change header w/ mobile view
+* change header w/ mobile view

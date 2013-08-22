@@ -1,7 +1,7 @@
-$(document).ready(function(){
-
 isMobile = false;
 mobileWidth = 500;
+
+$(document).ready(function(){
 
 	//SMOOTH SCROLL:
 	$('a[href^="#"]').on('click',function (e) {
@@ -32,12 +32,12 @@ mobileWidth = 500;
 	}
 
 	function mobileAdjusts() {
-		desktop = $('header, footer').find('desktop');
+		desktop = $('.header').find('img.desktop');
 		for (i=0; i<desktop.length; i++) {
 			$(this).removeClass('active').addClass('inactive');
 		};
 
-		mobile = $('header, footer').find('mobile');
+		mobile = $('.header, .footer').find('img.mobile');
 		for (i=0; i<mobile.length; i++) {
 			$(this).removeClass('inactive').addClass('active');
 		};
@@ -46,12 +46,15 @@ mobileWidth = 500;
 	getWidth();
 
 	$(window).resize(function() {
-		console.log('hey');
-		if ($(window).width<500) {
+		if (window.innerWidth < 500) {
 			isMobile = true;
+			console.log(isMobile);
+			console.log(window.innerWidth);
 			mobileAdjusts();
 		} else {
 			isMobile = false;
+			console.log(isMobile);
+			console.log(window.innerWidth);
 		}
 	});
 

@@ -19,45 +19,23 @@ $(document).ready(function(){
 
 	//MOBILE IMAGES:
 
-	function getWidth() {
-		winW = $(window).width();
-		if ( winW > 500 ) {
-			isMobile = false;
-			return false;
-		} else{
-			isMobile = true;
-			return true;
-			mobileAdjusts();
-		};
-	}
+	var onResize = function() {
+		if (window.innerWidth < mobileWidth) {
 
-	function mobileAdjusts() {
-		desktop = $('.header').find('img.desktop');
-		for (i=0; i<desktop.length; i++) {
-			$(this).removeClass('active').addClass('inactive');
-		};
+			$('.header, .footer').find('img.desktop').removeClass('active').addClass('inactive');
+			$('.header, .footer').find('img.mobile').removeClass('inactive').addClass('active');
 
-		mobile = $('.header, .footer').find('img.mobile');
-		for (i=0; i<mobile.length; i++) {
-			$(this).removeClass('inactive').addClass('active');
-		};
+		} else {
+
+			$('.header, .footer').find('img.mobile').removeClass('active').addClass('inactive');
+			$('.header, .footer').find('img.desktop').removeClass('inactive').addClass('active');
+		}
 	};
 
-	getWidth();
+	window.onresize = onResize;
+	window.onload = onResize;
 
-	$(window).resize(function() {
-		if (window.innerWidth < 500) {
-			isMobile = true;
-			console.log(isMobile);
-			console.log(window.innerWidth);
-			mobileAdjusts();
-		} else {
-			isMobile = false;
-			console.log(isMobile);
-			console.log(window.innerWidth);
-		}
-	});
-
+	
 
 
 }); // end ready

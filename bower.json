@@ -6,6 +6,9 @@
     "jquery": "~1.9.1",
     "normalize-css": "~2.1.1",
     "swiper": "https://github.com/nolimits4web/Swiper.git",
-    "fixie": "https://github.com/ryhan/fixie.git"
+    "fixie": "https://github.com/ryhan/fixie.git",
+    "sheetsee.js": "https://github.com/wkentdag/sheetsee.js.git",
+    "ICanHaz.js": "https://github.com/HenrikJoreteg/ICanHaz.js.git",
+    "tabletop": "https://github.com/jsoma/tabletop.git"
   }
 }

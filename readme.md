@@ -8,6 +8,8 @@ http://macalester.edu/wmcn/
 ###to-do thru august:
 * ~~switch to responsive layout~~
 
+* ~~change header w/ mobile view~~
+
 * ~~fix section floating~~
 
 * add jquery easing to ~~in-page links~~, calendar drop-downs, and link hovers
@@ -20,4 +22,3 @@ http://macalester.edu/wmcn/
 
 * add parallax to each sub-section (non-mobile only)
 
-* change header w/ mobile view

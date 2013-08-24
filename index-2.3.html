@@ -6,15 +6,17 @@
 	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script><base></base>
 	</script> 
 
-	<script src="bower_components/jquery/jquery.min.js">
-	</script>
+	<link rel="stylesheet" type="text/stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/stylesheet" href="css/compiled.css">
+	<link rel="stylesheet" type="text/styelsheet" href="http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.css">
+
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/ICanHaz.js/ICanHaz.min.js"></script>
+	<script src="bower_components/tabletop/src/tabletop.js"></script>
+	<srcipt src="bower_components/sheetsee.js/js/sheetsee.js"></script>
+
 
 	<script src="js/scripts.js"></script>
-
-	<link rel="stylesheet" type="text/stylesheet" href="bower_components/normalize-css/normalize.css">
-
-	<link rel="stylesheet" type="text/stylesheet" href="css/compiled.css">
-
 </head>
 
 <body>
@@ -95,6 +97,19 @@
 			<div class="whole">
 				<h2>PROGRAM GUIDE</h2>
 				<p class="fixie"></p>
+				<div id="siteTable>">
+					<script id="sideTable" type="text/html">
+						<table>
+							<tr> <th>TIME</th> <th>sunday</th> <th>monday</th> <th>tuesday</th>
+								<th>wednesday</th> <th>thursday</th> <th>friday</th> <th>saturday</th>
+							</thr>
+
+							{{#rows}}
+							<tr><td>{{monday}}</td> <td>{{monday}}</td> <td>{{tuesday}}</td>
+							<td>{{wednesday}}</td> <th>{{thursday}}</th> <th>{{friday}}</th> <th>{{saturday}}</th>
+						</table>
+					</script>
+				</div>
 			</div>
 		</div>
 
@@ -159,5 +174,17 @@
 
 
 	<script type="text/javascript" src="bower_components/fixie/fixie_min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			var gData
+			var URL = "0ApBvb69xvYJ3dHpVYVAwWnh2R2ZEa0h6cENGd0oyUWc"
+			Tabletop.init({key: URL, callback: showInfo, simpleSheet: true})
+		})
+		function showInfo(data) {
+			goData = data
+			Sheetsee.makeTable(gData, '#siteTable');
+		}
+	</script>
+
 </body>
 </html>

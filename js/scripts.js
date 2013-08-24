@@ -22,11 +22,13 @@ $(document).ready(function(){
 	var onResize = function() {
 		if (window.innerWidth < mobileWidth) {
 
+			isMobile = true;
 			$('.header, .footer').find('img.desktop').removeClass('active').addClass('inactive');
 			$('.header, .footer').find('img.mobile').removeClass('inactive').addClass('active');
 
 		} else {
 
+			isMobile = false;
 			$('.header, .footer').find('img.mobile').removeClass('active').addClass('inactive');
 			$('.header, .footer').find('img.desktop').removeClass('inactive').addClass('active');
 		}

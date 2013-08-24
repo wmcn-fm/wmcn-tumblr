@@ -14,6 +14,7 @@
 	<script src="bower_components/ICanHaz.js/ICanHaz.min.js"></script>
 	<script src="bower_components/tabletop/src/tabletop.js"></script>
 	<srcipt src="bower_components/sheetsee.js/js/sheetsee.js"></script>
+	<script src="bower_components/FlowType.JS/flowtype.js"></script>
 
 
 	<script src="js/scripts.js"></script>
@@ -184,6 +185,10 @@
 			goData = data
 			Sheetsee.makeTable(gData, '#siteTable');
 		}
+
+		$('.sub-container').flowtype({
+			maxFont: 16
+		});
 	</script>
 
 </body>

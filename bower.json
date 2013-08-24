@@ -9,6 +9,7 @@
     "fixie": "https://github.com/ryhan/fixie.git",
     "sheetsee.js": "https://github.com/wkentdag/sheetsee.js.git",
     "ICanHaz.js": "https://github.com/HenrikJoreteg/ICanHaz.js.git",
-    "tabletop": "https://github.com/jsoma/tabletop.git"
+    "tabletop": "https://github.com/jsoma/tabletop.git",
+    "FlowType.js:" "https://github.com/simplefocus/FlowType.JS.git"
   }
 }

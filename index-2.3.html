@@ -6,22 +6,28 @@
 	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script><base></base>
 	</script> 
 
-	<script src="bower_components/jquery/jquery.min.js">
-	</script>
+	<link rel="stylesheet" type="text/stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/stylesheet" href="css/compiled.css">
+	<link rel="stylesheet" type="text/styelsheet" href="http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.css">
+	<link rel="stylesheet" type="text/stylesheet" href="bower_components/swiper/dist/idangerous.swiper.css">
+
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/ICanHaz.js/ICanHaz.min.js"></script>
+	<script src="bower_components/tabletop/src/tabletop.js"></script>
+	<script src="bower_components/sheetsee.js/js/sheetsee.js"></script>
+	<script src="bower_components/FlowType.JS/flowtype.js"></script>
+	<script src="bower_components/swiper/dist/idangerous.swiper-2.0.min.js"></script>
+
 
 	<script src="js/scripts.js"></script>
-
-	<link rel="stylesheet" type="text/stylesheet" href="bower_components/normalize-css/normalize.css">
-
-	<link rel="stylesheet" type="text/stylesheet" href="css/compiled.css">
-
 </head>
 
 <body>
 
 	<div class="wrapper">
 		<div class="header">
-			<img src="images/header.png">
+			<img class="desktop active" src="images/header.png">
+			<img class="mobile inactive" src="images/favicon.png">
 		</div>
 
 		<div class="navbar">
@@ -72,8 +78,6 @@
 					<br />
 
 					<a href="#listen">Listen, listen, listen!</a>
-
-
 				</p>
 			</div>
 		</div>
@@ -96,26 +100,109 @@
 			<div class="whole">
 				<h2>PROGRAM GUIDE</h2>
 				<p class="fixie"></p>
+				<div id="siteTable>">
+					<script id="sideTable" type="text/html">
+						<table>
+							<tr> <th>TIME</th> <th>sunday</th> <th>monday</th> <th>tuesday</th>
+								<th>wednesday</th> <th>thursday</th> <th>friday</th> <th>saturday</th>
+							</thr>
+
+							{{#rows}}
+							<tr><td>{{monday}}</td> <td>{{monday}}</td> <td>{{tuesday}}</td>
+							<td>{{wednesday}}</td> <th>{{thursday}}</th> <th>{{friday}}</th> <th>{{saturday}}</th>
+						</table>
+					</script>
+				</div>
+			</div>
 		</div>
 
 		<div class="sub-container" id="blog">
+			<div class="whole">
+				<h2>PLAYLISTS</h2>
+			</div>
+
+			<div class="selector whole">
+				
+					
+					<img class="prev" src="images/prev-arrow.png" alt="Newer Posts">
+
+					<img class="next" src="images/next-arrow.png" alt="Older Posts">	
+				
+			</div>
+
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="left">
+								<h2><a href="">posT 1</a></h2>
+								<p class="fixie"></p>
+								<img class="fixie"></img>
+								<p><a href="">a link</a></p>
+							</div>
+
+
+							<div class="left">
+								<h2><a href="">post 2</a></h2>
+								<p class="fixie"></p>
+							</div>
+
+							<div class="left">
+								<h2><a href="">Post 3</a></h2>
+								<p class="fixie"></p>
+								<p class="fixie"></p>
+								<p class="fixie"></p>
+								<p class="fixie"></p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+
+							<div class="left">
+								<h2><a href="">posT 4</a></h2>
+								<p class="fixie"></p>
+								<img class="fixie"></img>
+								<p><a href="">a link</a></p>
+							</div>
+
+
+							<div class="left">
+								<h2><a href="">post 5</a></h2>
+								<p class="fixie"></p>
+							</div>
+
+							<div class="left">
+								<h2><a href="">Post 6</a></h2>
+								<p class="fixie"></p>
+							</div>
+						</div>
+
+					</div> <!--wrapper-->
+				</div> <!--sipwer container-->
+
+			<div class="whole" id="reviews">
+				<h2>STAFF REVIEWS + NEWS</h2>
+			</div>
+
 			<div class="left">
-				<h2>posT 1</h2>
-				<p class="fixie"></p>
+				<h2>Content 1</h2>
 				<img class="fixie"></img>
-				<p><a href="">a link</a></p>
-			</div>
-
-
-			<div class="left">
-				<h2>post 2</h2>
+				<p class="fixie"></p>
+				<p class="fixie"></p>
 				<p class="fixie"></p>
 			</div>
 
 			<div class="left">
-				<h2>Post 3</h2>
+				<h2>Content 2</h2>
+				<img class="fixie"></img>
 				<p class="fixie"></p>
 			</div>
+
+			<div class="left">
+				<h2>Content 3</h2>
+				<img class="fixie"></img>
+				<p class="fixie"></p>
+			</div>
+
 		</div>
 
 		<div class="sub-container" id="listen">
@@ -126,9 +213,28 @@
 		</div>
 
 		<div class="footer">
-			<img src="images/header.png">
+			<img class="desktop active" src="images/header.png">
+			<img class="mobile inactive" src="images/favicon.png">
 		</div>
 	</div> <!--end wrapper -->
+
+
 	<script type="text/javascript" src="bower_components/fixie/fixie_min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			var gData
+			var URL = "0ApBvb69xvYJ3dHpVYVAwWnh2R2ZEa0h6cENGd0oyUWc"
+			Tabletop.init({key: URL, callback: showInfo, simpleSheet: true})
+		})
+		function showInfo(data) {
+			goData = data
+			Sheetsee.makeTable(gData, '#siteTable');
+		}
+
+		$('.sub-container').flowtype({
+			maxFont: 16
+		});
+	</script>
+
 </body>
 </html>

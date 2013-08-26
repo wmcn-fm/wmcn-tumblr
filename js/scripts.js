@@ -1,5 +1,6 @@
 isMobile = false;
 mobileWidth = 500;
+slideSpeed = 5000;
 
 $(document).ready(function(){
 
@@ -36,6 +37,29 @@ $(document).ready(function(){
 
 	window.onresize = onResize;
 	window.onload = onResize;
+
+	// SWIPER:
+
+	$(function(){
+		var swiper = $('.swiper-container').swiper({
+			mode: 'horizontal',
+			loop: true,
+			calculateHeight: true,
+			autoplay: slideSpeed
+		});
+
+		$('.prev, .next, .swiper-container').hover(function(){
+			swiper.stopAutoplay();
+			//console.log(autoSpeed);
+		});
+
+	})
+
+
+
+	$('.prev').click(function() {
+		$swiper
+	})
 
 	
 

@@ -124,6 +124,7 @@ ul {
 	margin: none;
 	padding: none;
 	border: none;
+	z-index: 100;
 	table {
 
 	}
@@ -196,6 +197,9 @@ ul {
 .left {
 	float: left;
 	@include thirds;
+	img {
+
+	}
 }
 
 .right {
@@ -213,7 +217,39 @@ ul {
 	@include hundo;
 }
 
+.selector {
+	img {
+		height: 25px;
+		width: auto;
+		padding: none;
+		margin: none;
+		border: none;
 
+		&:hover {cursor: pointer;
+				//border-bottom: 3px solid; 
+				}
+
+	}
+
+	span {
+		&:hover {border-bottom: 3px solid;}
+	}
+	color: $blue;
+	font-size: 80px;
+	margin: none;
+	padding: none;
+}
+
+/*
+.prev {
+	&:hover {border-bottom: 3px solid;}
+}
+
+.next {
+	&:hover {border-bottom: 3px solid;}
+}
+
+*/
 
 #index {
 	border-color: $grey;
@@ -249,11 +285,11 @@ ul {
 	text-transform: uppercase
 	}
 
-	img {
+	/*img {
 	width: 78%;
 	max-width: 250px;
 	height: auto;
-	}
+	}*/
 }
 
 #listen {

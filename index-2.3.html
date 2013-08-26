@@ -9,12 +9,14 @@
 	<link rel="stylesheet" type="text/stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" type="text/stylesheet" href="css/compiled.css">
 	<link rel="stylesheet" type="text/styelsheet" href="http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.css">
+	<link rel="stylesheet" type="text/stylesheet" href="bower_components/swiper/dist/idangerous.swiper.css">
 
 	<script src="bower_components/jquery/jquery.min.js"></script>
 	<script src="bower_components/ICanHaz.js/ICanHaz.min.js"></script>
 	<script src="bower_components/tabletop/src/tabletop.js"></script>
-	<srcipt src="bower_components/sheetsee.js/js/sheetsee.js"></script>
+	<script src="bower_components/sheetsee.js/js/sheetsee.js"></script>
 	<script src="bower_components/FlowType.JS/flowtype.js"></script>
+	<script src="bower_components/swiper/dist/idangerous.swiper-2.0.min.js"></script>
 
 
 	<script src="js/scripts.js"></script>
@@ -118,31 +120,74 @@
 			<div class="whole">
 				<h2>PLAYLISTS</h2>
 			</div>
-			<div class="left">
-				<h2>posT 1</h2>
-				<p class="fixie"></p>
-				<img class="fixie"></img>
-				<p><a href="">a link</a></p>
+
+			<div class="selector whole">
+				
+					
+					<img class="prev" src="images/prev-arrow.png" alt="Newer Posts">
+
+					<img class="next" src="images/next-arrow.png" alt="Older Posts">	
+				
 			</div>
 
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="left">
+								<h2><a href="">posT 1</a></h2>
+								<p class="fixie"></p>
+								<img class="fixie"></img>
+								<p><a href="">a link</a></p>
+							</div>
 
-			<div class="left">
-				<h2>post 2</h2>
-				<p class="fixie"></p>
-			</div>
 
-			<div class="left">
-				<h2>Post 3</h2>
-				<p class="fixie"></p>
-			</div>
+							<div class="left">
+								<h2><a href="">post 2</a></h2>
+								<p class="fixie"></p>
+							</div>
 
-			<div class="whole">
+							<div class="left">
+								<h2><a href="">Post 3</a></h2>
+								<p class="fixie"></p>
+								<p class="fixie"></p>
+								<p class="fixie"></p>
+								<p class="fixie"></p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+
+							<div class="left">
+								<h2><a href="">posT 4</a></h2>
+								<p class="fixie"></p>
+								<img class="fixie"></img>
+								<p><a href="">a link</a></p>
+							</div>
+
+
+							<div class="left">
+								<h2><a href="">post 5</a></h2>
+								<p class="fixie"></p>
+							</div>
+
+							<div class="left">
+								<h2><a href="">Post 6</a></h2>
+								<p class="fixie"></p>
+							</div>
+						</div>
+
+					</div> <!--wrapper-->
+				</div> <!--sipwer container-->
+
+			<div class="whole" id="reviews">
 				<h2>STAFF REVIEWS + NEWS</h2>
 			</div>
 
 			<div class="left">
 				<h2>Content 1</h2>
 				<img class="fixie"></img>
+				<p class="fixie"></p>
+				<p class="fixie"></p>
 				<p class="fixie"></p>
 			</div>
 

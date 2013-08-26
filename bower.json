@@ -5,7 +5,7 @@
   "dependencies": {
     "jquery": "~1.9.1",
     "normalize-css": "~2.1.1",
-    "swiper": "https://github.com/nolimits4web/Swiper.git",
+    "cycle2": "bower install https://raw.github.com/malsup/malsup.github.com/master/min/jquery.cycle2.min.js",
     "fixie": "https://github.com/ryhan/fixie.git",
     "nswiper": "~0.1.2",
     "sheetsee.js": "https://github.com/wkentdag/sheetsee.js.git",

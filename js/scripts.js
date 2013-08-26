@@ -38,9 +38,23 @@ $(document).ready(function(){
 	window.onresize = onResize;
 	window.onload = onResize;
 
-	// SWIPER:
+	// CYCLE:
 
-	$(function(){
+	$('.slideshow-container').each( function() {
+		$(this).cycle({
+			slides: '> div.slide-wrapper',
+			speed: 200,
+			//timeout: 4000,
+			fx: 'scrollHorz'
+			//log: false,
+			//pauseOnHover: true,
+			//updateView: 0
+		});
+	});
+
+
+
+	/*$(function(){
 		var swiper = $('.swiper-container').swiper({
 			mode: 'horizontal',
 			loop: true,
@@ -53,7 +67,7 @@ $(document).ready(function(){
 			//console.log(autoSpeed);
 		});
 
-	})
+	})*/
 
 
 

@@ -158,7 +158,7 @@ ul {
   margin: none;
   padding: none; }
   .selector img {
-    height: 25px;
+    height: 20px;
     width: auto;
     padding: none;
     margin: none;
@@ -167,6 +167,9 @@ ul {
       cursor: pointer; }
   .selector span:hover {
     border-bottom: 3px solid; }
+
+.cycle-slideshow {
+  z-index: 50; }
 
 /*
 .prev {

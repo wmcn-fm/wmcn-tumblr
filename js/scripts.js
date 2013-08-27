@@ -39,43 +39,13 @@ $(document).ready(function(){
 	window.onload = onResize;
 
 	// CYCLE:
-
-	$('.slideshow-container').each( function() {
-		$(this).cycle({
-			slides: '> div.slide-wrapper',
-			speed: 200,
-			//timeout: 4000,
-			fx: 'scrollHorz'
-			//log: false,
-			//pauseOnHover: true,
-			//updateView: 0
-		});
-	});
-
-
-
-	/*$(function(){
-		var swiper = $('.swiper-container').swiper({
-			mode: 'horizontal',
-			loop: true,
-			calculateHeight: true,
-			autoplay: slideSpeed
-		});
-
-		$('.prev, .next, .swiper-container').hover(function(){
-			swiper.stopAutoplay();
-			//console.log(autoSpeed);
-		});
-
-	})*/
-
-
-
-	$('.prev').click(function() {
-		$swiper
-	})
-
 	
-
-
+/*
+	$('.cycle-slide-active').animate({
+		left: 200}, {
+			duration: 'slow',
+			easing: 'easeInOutCirc'
+		});
+*/
+	//$(cycle).
 }); // end ready

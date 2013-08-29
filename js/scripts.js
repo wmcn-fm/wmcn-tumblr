@@ -4,6 +4,7 @@ slideSpeed = 5000;
 
 $(document).ready(function(){
 
+		
 	//SMOOTH SCROLL:
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
@@ -18,8 +19,9 @@ $(document).ready(function(){
 	    });
 	}); //end click
 
-	//MOBILE IMAGES:
 
+
+	//MOBILE IMAGES:
 	var onResize = function() {
 		if (window.innerWidth < mobileWidth) {
 
@@ -38,8 +40,9 @@ $(document).ready(function(){
 	window.onresize = onResize;
 	window.onload = onResize;
 
+
+
 	// CYCLE:
-	
 /*
 	$('.cycle-slide-active').animate({
 		left: 200}, {
@@ -48,4 +51,43 @@ $(document).ready(function(){
 		});
 */
 	//$(cycle).
+
+
+
+	//TUMBLR:
+	var tumblr = require('tumblr.js');
+	var client = tumblr.createClient({
+	  //consumer_key: 'GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e',
+	  //consumer_secret: '7gm6oRJPHQ5X6efapzS9znstk8itNbce6uzERblEo7T0Q7E26W',
+	  //token: 'vwE3Cv3NJqeUOFPiuwEfRHMsGcMCb8QUKi4URgre40e2wiQI2X',
+	  //token_secret: 'cKTa4KOiukaJ64DeDlH1ft57Ba4qsLCdquSL9dPjAEZk7DHCI6'
+	  consumer_key: 'GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e',
+	  consumer_secret: '7gm6oRJPHQ5X6efapzS9znstk8itNbce6uzERblEo7T0Q7E26W',
+	  token: 'QoI8b6ndrx2BZAtapb4CweGMh4YOA4TnZzDXPeJrzbiQcWdC9N',
+	  token_secret: 'xGbkCZGbHwUDFT9Od0gWiS9FxyMHAnqBJdmzCd3Pmvnb3QpqhE'
+	});
+
+	$.ajax({
+	  dataType: "json",
+	  url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
+	  data: data,
+	  success: function(data) {
+	  	$.each(data.response.posts, function(index, item) {
+	  		var post_url = item.short_url,
+	  		date = item.date,
+	  		heading = item.title,
+	  		content = item.body
+
+	  		console.log(heading);
+
+	  	});
+	  }
+	});
+
+
+
+
+
+
+
 }); // end ready

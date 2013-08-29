@@ -37,6 +37,7 @@ h2 {
 
 a {
 	text-decoration: none;
+
 	&:hover {border-bottom: 3px solid; }
 }
 
@@ -243,16 +244,18 @@ ul {
 .cycle-slideshow {
 	z-index: 50;
 }
-/*
-.prev {
-	&:hover {border-bottom: 3px solid;}
+
+.cycle-prev {
+	//&:hover {transition: 0.2s;
+			//border-color: #B8E6FC;}
 }
 
-.next {
-	&:hover {border-bottom: 3px solid;}
+.cycle-next {
+	//&:hover {transition: 0.2s;
+			//border-color: #B8E6FC;}
 }
 
-*/
+
 
 #index {
 	border-color: $grey;

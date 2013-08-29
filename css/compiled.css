@@ -171,16 +171,6 @@ ul {
 .cycle-slideshow {
   z-index: 50; }
 
-/*
-.prev {
-	&:hover {border-bottom: 3px solid;}
-}
-
-.next {
-	&:hover {border-bottom: 3px solid;}
-}
-
-*/
 #index {
   border-color: #bdbdbd; }
   #index a {

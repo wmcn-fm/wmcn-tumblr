@@ -48,23 +48,30 @@ p {
 }
 
 
-p.head {
+.head {
 	font-family: $main;
 //	font-variant: small-caps;
 	text-transform: uppercase;
 	color: $bodyGrey;
+	text-align: center;
 }
 
 table {
 	width: 100%;
 	max-width: 1000px;
-	border: 1;
-	cellpadding: 4;
-	cellspacing: 0;
 	height: auto;
-	border-color: inherit;
-	rules: rows;
-	frames: hsides;
+}
+
+th {
+	font-family: $main;
+	text-align: center;
+}
+
+td, th {
+	border-bottom: 2px solid $yellow;
+	border-spacing: 5;
+	border-collapse: 0;
+	padding: 3px;
 }
 
 ul {
@@ -347,6 +354,7 @@ ul {
 	color: $bodyGrey	
 	}
 }
+
 
 
 

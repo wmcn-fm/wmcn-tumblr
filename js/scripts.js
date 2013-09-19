@@ -20,7 +20,6 @@ $(document).ready(function(){
 	}); //end click
 
 
-
 	//MOBILE IMAGES:
 	var onResize = function() {
 		if (window.innerWidth < mobileWidth) {
@@ -39,23 +38,9 @@ $(document).ready(function(){
 
 	window.onresize = onResize;
 	window.onload = onResize;
-
-
-
-	// CYCLE:
 /*
-	$('.cycle-slide-active').animate({
-		left: 200}, {
-			duration: 'slow',
-			easing: 'easeInOutCirc'
-		});
-*/
-	//$(cycle).
-
-
-
 	//TUMBLR:
-	var tumblr = require('tumblr.js');
+	//var tumblr = require('index.js');
 	var client = tumblr.createClient({
 	  //consumer_key: 'GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e',
 	  //consumer_secret: '7gm6oRJPHQ5X6efapzS9znstk8itNbce6uzERblEo7T0Q7E26W',
@@ -72,6 +57,7 @@ $(document).ready(function(){
 	  url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
 	  data: data,
 	  success: function(data) {
+	  	console.log('im here');
 	  	$.each(data.response.posts, function(index, item) {
 	  		var post_url = item.short_url,
 	  		date = item.date,
@@ -82,6 +68,14 @@ $(document).ready(function(){
 
 	  	});
 	  }
+	});
+*/
+
+	//TABLE:
+	$('div.summary').hide();
+	$('td > a').hover(function() {
+		console.log('hover');
+		$(this).next().slideToggle();
 	});
 
 

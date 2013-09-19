@@ -31,21 +31,26 @@ p {
   text-align: center;
   line-height: 130%; }
 
-p.head {
+.head {
   font-family: futura;
   text-transform: uppercase;
-  color: #3d3d3d; }
+  color: #3d3d3d;
+  text-align: center; }
 
 table {
   width: 100%;
   max-width: 1000px;
-  border: 1;
-  cellpadding: 4;
-  cellspacing: 0;
-  height: auto;
-  border-color: inherit;
-  rules: rows;
-  frames: hsides; }
+  height: auto; }
+
+th {
+  font-family: futura;
+  text-align: center; }
+
+td, th {
+  border-bottom: 2px solid #ff8900;
+  border-spacing: 5;
+  border-collapse: 0;
+  padding: 3px; }
 
 ul {
   line-height: 130%;

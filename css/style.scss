@@ -79,6 +79,16 @@ ul {
 	list-style-type: none;
 	margin: none;
 	padding: none;
+	text-align: center;
+
+	img {
+		max-width: 50px;
+		height: auto;
+	}
+}
+
+li {
+	display: inline;
 }
 
 
@@ -260,6 +270,11 @@ ul {
 .cycle-next {
 	//&:hover {transition: 0.2s;
 			//border-color: #B8E6FC;}
+}
+
+.tip {
+	display: block;
+	border: 2px solid $yellow;
 }
 
 

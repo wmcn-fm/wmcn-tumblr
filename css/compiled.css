@@ -56,7 +56,14 @@ ul {
   line-height: 130%;
   list-style-type: none;
   margin: none;
-  padding: none; }
+  padding: none;
+  text-align: center; }
+  ul img {
+    max-width: 50px;
+    height: auto; }
+
+li {
+  display: inline; }
 
 /* =========== CLASSES ========== */
 .wrapper {
@@ -175,6 +182,10 @@ ul {
 
 .cycle-slideshow {
   z-index: 50; }
+
+.tip {
+  display: block;
+  border: 2px solid #ff8900; }
 
 #index {
   border-color: #bdbdbd; }

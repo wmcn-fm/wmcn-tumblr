@@ -78,6 +78,18 @@ $(document).ready(function(){
 		$(this).next().slideToggle();
 	});
 
+	//CONTACT:
+	$('div.tooltip').hide();
+	$('img.tooltip').hover(function() {
+
+		which = $(this).attr("class");
+		selector = 'div.' + which;
+		selectoor = "div.'"+which'"';
+		console.log(selectoor);
+		$('div.' + which).slideToggle();
+	});
+
+
 
 
 

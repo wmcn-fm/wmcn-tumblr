@@ -12,11 +12,11 @@ http://macalester.edu/wmcn/
 
 * ~~fix section floating~~
 
-* add jquery easing to ~~in-page links~~, calendar drop-downs, and link hovers
+* ~~add jquery easing to in-page links, calendar drop-downs~~
 
 * update icons, add dropdown tooltips
 
-* add slider to now playing
+* ~~add slider to now playing~~
 
 * integrate blog section to actual tumblr
 

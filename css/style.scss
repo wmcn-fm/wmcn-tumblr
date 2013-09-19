@@ -33,6 +33,7 @@ h2 {
 	display: inline-block;
 	text-align: center;
 	color: inherit;
+	line-height: 130%;
 }
 
 a {
@@ -65,6 +66,7 @@ table {
 th {
 	font-family: $main;
 	text-align: center;
+	width: 13%;
 }
 
 td, th {
@@ -72,6 +74,10 @@ td, th {
 	border-spacing: 5;
 	border-collapse: 0;
 	padding: 3px;
+
+	a {
+		text-transform: uppercase;
+	}
 }
 
 ul {
@@ -274,7 +280,7 @@ li {
 
 .tip {
 	display: block;
-	border: 2px solid $yellow;
+	border-bottom: 2px solid $yellow;
 }
 
 

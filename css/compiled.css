@@ -19,7 +19,8 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
-  color: inherit; }
+  color: inherit;
+  line-height: 130%; }
 
 a {
   text-decoration: none; }
@@ -44,13 +45,16 @@ table {
 
 th {
   font-family: futura;
-  text-align: center; }
+  text-align: center;
+  width: 13%; }
 
 td, th {
   border-bottom: 2px solid #ff8900;
   border-spacing: 5;
   border-collapse: 0;
   padding: 3px; }
+  td a, th a {
+    text-transform: uppercase; }
 
 ul {
   line-height: 130%;
@@ -185,7 +189,7 @@ li {
 
 .tip {
   display: block;
-  border: 2px solid #ff8900; }
+  border-bottom: 2px solid #ff8900; }
 
 #index {
   border-color: #bdbdbd; }

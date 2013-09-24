@@ -58,7 +58,6 @@ $(document).ready(function(){
 		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
 		dataType: "jsonp",
 		success: function(data) {
-	  	console.log(data);
 	  	$.each(data.response.posts, function(index, item) {
 	  		var post_url = item.short_url,
 	  		date = item.date,
@@ -81,19 +80,17 @@ $(document).ready(function(){
 
 	//TABLE:
 	$('div.summary').hide();
-	$('td > a').hover(function() {
-		console.log('hover');
-		$(this).next().slideToggle();
+	$('td').hover(function() {
+		$(this).find('div.summary').slideToggle();
 	});
 
-	//CONTACT:
+	//CONTACT:.
 	$('div.tooltip').hide();
 	$('img.tooltip').hover(function() {
-
-		which = $(this).attr("class");
-		selector = 'div.' + which;
-		console.log(selectoor);
-		test = $(selector).slideToggle();
+	    which = $(this).attr("class").replace('tooltip', '').replace(' ','');
+	    selector = 'div.' + which;
+	    slide = $(selector).delay(500).toggle("slide");
+	    console.log(slide);
 	});
 
 

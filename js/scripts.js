@@ -40,6 +40,7 @@ $(document).ready(function(){
 	window.onload = onResize;
 
 	//TUMBLR:
+
 	//var tumblr = require('index.js');
 	/*
 	var client = tumblr.createClient({
@@ -54,6 +55,7 @@ $(document).ready(function(){
 	});
 	*/
 	var counter = 1;
+
 	$.ajax({
 		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
 		dataType: "jsonp",
@@ -73,6 +75,27 @@ $(document).ready(function(){
 	  	});
 	  }
 	});
+
+	var counter2 = 1;
+	var bcounter = 'b' + counter2;
+
+	$.ajax({
+		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&tag=blog',
+		dataType: "jsonp",
+		success: function(data) {
+			$.each(data.response.posts, function(index,item) {
+				var post_url = item.short_url,
+				data = item.date,
+				heading = item.title,
+				content = item.body
+
+				console.log(bcounter);
+				$('div#' + bcounter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
+		  		$('div#' + bcounter).first().append(content);
+			}); // end each
+		}
+
+	}); //end ajax call
 
 
 

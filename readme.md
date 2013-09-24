@@ -14,7 +14,7 @@ http://macalester.edu/wmcn/
 
 * ~~add jquery easing to in-page links, calendar drop-downs~~
 
-* update icons, add dropdown tooltips
+* ~~update icons, add dropdown tooltips~~
 
 * ~~add slider to now playing~~
 

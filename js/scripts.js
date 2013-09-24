@@ -60,20 +60,18 @@ $(document).ready(function(){
 		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
 		dataType: "jsonp",
 		success: function(data) {
-	  	$.each(data.response.posts, function(index, item) {
-	  		var post_url = item.short_url,
-	  		date = item.date,
-	  		heading = item.title,
-	  		content = item.body
+		  	$.each(data.response.posts, function(index, item) {
+		  		var post_url = item.short_url,
+		  		date = item.date,
+		  		heading = item.title,
+		  		content = item.body
 
-	  		console.log(date);
-	  		$('div#' + counter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
-	  		$('div#' + counter).first().append(content);
+		  		$('div#' + counter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
+		  		$('div#' + counter).first().append(content);
 
-
-	  		counter++;
-	  	});
-	  }
+		  		counter++;
+		  	});
+		}
 	});
 
 	var counter2 = 1;
@@ -89,17 +87,13 @@ $(document).ready(function(){
 				heading = item.title,
 				content = item.body
 
-				console.log(bcounter);
 				$('div#' + bcounter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
 		  		$('div#' + bcounter).first().append(content);
+
+		  		counter2++;
 			}); // end each
 		}
-
 	}); //end ajax call
-
-
-
-
 
 	//TABLE:
 	$('div.summary').hide();
@@ -113,7 +107,6 @@ $(document).ready(function(){
 	    which = $(this).attr("class").replace('tooltip', '').replace(' ','');
 	    selector = 'div.' + which;
 	    slide = $(selector).delay(500).toggle("slide");
-	    console.log(slide);
 	});
 
 

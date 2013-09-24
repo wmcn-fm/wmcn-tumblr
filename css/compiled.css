@@ -143,6 +143,9 @@ li {
   border: none;
   width: 32%;
   max-width: 330px; }
+  .left img {
+    width: 100%;
+    height: auto; }
 
 .right {
   float: right;
@@ -186,7 +189,6 @@ li {
 
 .cycle-slideshow {
   z-index: 50;
-  height: 500px;
   overflow: scroll; }
 
 .slide-wrapper {

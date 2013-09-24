@@ -41,19 +41,6 @@ $(document).ready(function(){
 
 	//TUMBLR:
 
-	//var tumblr = require('index.js');
-	/*
-	var client = tumblr.createClient({
-	  //consumer_key: 'GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e',
-	  //consumer_secret: '7gm6oRJPHQ5X6efapzS9znstk8itNbce6uzERblEo7T0Q7E26W',
-	  //token: 'vwE3Cv3NJqeUOFPiuwEfRHMsGcMCb8QUKi4URgre40e2wiQI2X',
-	  //token_secret: 'cKTa4KOiukaJ64DeDlH1ft57Ba4qsLCdquSL9dPjAEZk7DHCI6'
-	  consumer_key: 'GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e',
-	  consumer_secret: '7gm6oRJPHQ5X6efapzS9znstk8itNbce6uzERblEo7T0Q7E26W',
-	  token: 'QoI8b6ndrx2BZAtapb4CweGMh4YOA4TnZzDXPeJrzbiQcWdC9N',
-	  token_secret: 'xGbkCZGbHwUDFT9Od0gWiS9FxyMHAnqBJdmzCd3Pmvnb3QpqhE'
-	});
-	*/
 	var counter = 1;
 
 	$.ajax({
@@ -75,7 +62,6 @@ $(document).ready(function(){
 	});
 
 	var counter2 = 1;
-	var bcounter = 'b' + counter2;
 
 	$.ajax({
 		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&tag=blog',
@@ -87,8 +73,8 @@ $(document).ready(function(){
 				heading = item.title,
 				content = item.body
 
-				$('div#' + bcounter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
-		  		$('div#' + bcounter).first().append(content);
+				$('div#b' + counter2).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
+		  		$('div#b' + counter2).first().append(content);
 
 		  		counter2++;
 			}); // end each
@@ -108,12 +94,5 @@ $(document).ready(function(){
 	    selector = 'div.' + which;
 	    slide = $(selector).delay(500).toggle("slide");
 	});
-
-
-
-
-
-
-
 
 }); // end ready

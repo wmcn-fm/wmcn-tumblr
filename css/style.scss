@@ -222,7 +222,8 @@ li {
 	float: left;
 	@include thirds;
 	img {
-
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -266,7 +267,6 @@ li {
 
 .cycle-slideshow {
 	z-index: 50;
-	height: 500px;
 	overflow: scroll;
 }
 

@@ -15,6 +15,7 @@
 
 	<script src="bower_components/FlowType.JS/flowtype.js"></script>
 	<script src="bower_components/jquery.cycle2.min.js/index.js"></script>
+	<script src="bower_components/cycle2/jquery.cycle2.center.js"></script>
 
 	<script src="js/scripts.js"></script>
 </head>
@@ -116,8 +117,9 @@
 
 			<div class="half">
 				<h2>CONTACT</h2>
-				<ul>
-					<li>
+
+				<div class="contacts">
+					<div class="icons">
 						<a href="mailto:wmcn@macalester.edu" target="_blank">
 							<img class="tooltip email" src="images/contact/email.png" alt="Email">
 						</a>
@@ -143,69 +145,66 @@
 						<a href="https://www.facebook.com/pages/WMCN-917fm-Macalester-College-Radio/115444021832195" target="_blank">
 							<img class="tooltip facebook" src="images/contact/facebook.png" alt="Facebook">
 						</a>
-					</li>
-					
-						<div class="tooltip email">
-							<p>
-								Email us here for general inquiries. To contact a specific staff member, see the 
-								<span class="head">
-									board
-								</span> at left.
-							</p>
-						</div>
-						
-						<div class="tooltip snail">
-							<p>
-								Send us something the old-fashioned way. Snail mail address: 
-							<p>
-									<span class="head">
-										wmcn
-										<br />
-										Macalester College
-										<br />
-										1600 Grand Avenue
-										<br />
-										Saint Paul, MN 55105
-										<br />
-									</span>
-							</p>
-							<p>
-								To address to a specific manager or director, add 
-								<span class="head">
-									attn: [name or position]
-								</span>
-									after 
-								<span class="head">
-									wmcn
-								</span>
-							</p>
+					</div> <!--end icons-->
+						<div class="contact-slides">
+							<div id="contacts" class="cycle-slideshow" data-cycle-pager="div.icons" data-cycle-pager-template="" data-cycle-pager-event="mouseover" data-cycle-fx="scrollHorz" data-cycle-slides="> div.tooltip" data-cycle-log="false" data-cycle-center-horz="true" data-cycle-pause-on-hover="div.contacts">
+								<div class="tooltip email">
+									<p>
+										Email us for general inquiries. To contact a specific staff member, see the 
+										<span class="head">
+											board
+										</span> at left.
+									</p>
+								</div>
+								
+								<div class="tooltip snail">
+									<p>
+										Send us something the old-fashioned way. Snail mail address: 
+									<p>
+											<span class="head">
+												wmcn
+												<br />
+												Macalester College
+												<br />
+												1600 Grand Avenue
+												<br />
+												Saint Paul, MN 55105
+												<br />
+											</span>
+									</p>
+									
+								</div>
 
-						</div>
-						<div class="tooltip phone">
-							<p>Call us up.</p>
-							<p>Office phone: 
-								<span class="head">651-696-6082</span>
-								<br />
-								Live request line:
-								<span class="head">651-696-6312</span>
-							</p>
-						</div>
+								<div class="tooltip phone">
+									<p>Call us up.</p>
+									<p>Office phone: 
+										<span class="head">651-696-6082</span>
+										<br />
+										Live request line:
+										<span class="head">651-696-6312</span>
+									</p>
+								</div>
 
-						<div class="tooltip mixcloud">
-							<p>Stream a selection of archived shows on Mixcloud. To view playlists for all shows, check out the <a href="#blog">blog</a> and its <a href="http://wmcn.tumblr.com/archive">archive</a>.
-							</p>
-						</div>
+								<div class="tooltip mixcloud">
+									<p>Stream a selection of archived shows on Mixcloud. To view playlists for all shows, check out the <a href="#blog">blog</a> and its <a href="http://wmcn.tumblr.com/archive">archive</a>.
+									</p>
+								</div>
 
-						<div class="tooltip twitter">
-							<p>Follow us on Twitter.
-							</p>
-						</div>
+								<div class="tooltip twitter">
+									<p>Follow us on Twitter.
+									</p>
+								</div>
 
-						<div class="tooltip facebook">
-							<p>Like us on Facebook.
-							</p>
-						</div>
-			</div>
+								<div class="tooltip facebook">
+									<p>Like us on Facebook.
+									</p>
+								</div>
+
+							</div> <!-- end slideshow-->
+						</div> <!-- end contact-slides-->
+
+				</div> <!-- end contacts-->
+			</div> <!-- end half-->
 
 			<div class="whole">
 				<h2>PROGRAM GUIDE</h2>

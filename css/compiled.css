@@ -62,9 +62,6 @@ ul {
   margin: none;
   padding: none;
   text-align: center; }
-  ul img {
-    max-width: 50px;
-    height: auto; }
 
 li {
   display: inline; }
@@ -194,12 +191,23 @@ li {
 .slide-wrapper {
   overflow: scroll; }
 
+img.tooltip {
+  display: inline;
+  max-width: 50px;
+  height: auto; }
+
+div.tooltip {
+  text-align: center; }
+
 .post_tag {
   font-family: futura;
   text-transform: uppercase;
   font-size: 10px;
   text-align: center;
   display: inline; }
+
+#contacts {
+  height: 152px; }
 
 #index {
   border-color: #bdbdbd; }

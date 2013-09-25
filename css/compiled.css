@@ -194,6 +194,13 @@ li {
 .slide-wrapper {
   overflow: scroll; }
 
+.post_tag {
+  font-family: futura;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  display: inline; }
+
 #index {
   border-color: #bdbdbd; }
   #index a {

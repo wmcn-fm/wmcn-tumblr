@@ -18,7 +18,7 @@ http://macalester.edu/wmcn/
 
 * ~~add slider to now playing~~
 
-* integrate blog section to actual tumblr
+* ~~integrate blog section to actual tumblr~~
 
 * add parallax to each sub-section (non-mobile only)
 

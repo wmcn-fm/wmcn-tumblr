@@ -46,6 +46,8 @@ $(document).ready(function(){
 	var prependTag1 = '<p class="post_tag"><a href="http://wmcn.tumblr.com/tagged/';
 	var appendTag = '</a></p>';
 	var bullet = '<span> &bull; </span>';
+	var preContentContainer = '<div class="blog_item">';
+	var postContentContainer = '</div>';
 
 	$.ajax({
 		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
@@ -71,7 +73,7 @@ $(document).ready(function(){
 				}
 
 		  		$('div#' + counter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
-		  		$('div#' + counter).first().append(content);
+		  		$('div#' + counter).first().append(preContentContainer + content + postContentContainer);
 		  		$('div#' + counter).first().append(wholeTags)
 
 		  		counter++;
@@ -103,7 +105,7 @@ $(document).ready(function(){
 				}
 
 				$('div#b' + counter2).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
-		  		$('div#b' + counter2).first().append(content);
+		  		$('div#b' + counter2).first().append(preContentContainer + content + postContentContainer);
 		  		$('div#b' + counter2).first().append(wholeTags);
 
 		  		counter2++;
@@ -117,6 +119,29 @@ $(document).ready(function(){
 		$(this).find('div.summary').slideToggle();
 	});
 
+	//CYCLE:
+/*
+	$(window).scroll(function() {
+		$('.cycle-slideshow').not(':visible').cycle('pause');
+		$('.cycle-slideshow').is(':visible').cycle('resume');
+		var slideshows = [];
+		$('.cycle-slideshow').each(function(index, value) {
+			slideshows.push($(this));
+
+			for (var i = 0; i < slideshows.length; i++) {
+				if (slideshows[i].not(':visible')) {
+					slideshows[i].cycle('pause');
+				} else if (slideshows[i].is(':visible').is('cycle-paused')) {
+					slideshows[i].cycle('resume');
+
+				};
+			}
+
+		});
+
+	});
+	
+*/
 	//CONTACT:.
 /*
 	$('#contacts').on('cycle-before', function(event, opts) {

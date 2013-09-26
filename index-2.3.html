@@ -16,6 +16,8 @@
 	<script src="bower_components/FlowType.JS/flowtype.js"></script>
 	<script src="bower_components/jquery.cycle2.min.js/index.js"></script>
 	<script src="bower_components/cycle2/jquery.cycle2.center.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+	<script src="js/jquery.superscrollorama.js"></script>
 
 	<script src="js/scripts.js"></script>
 </head>
@@ -45,9 +47,22 @@
 		</div>
 
 		<div class="sub-container" id="index">
+			<div class="index-pin">
+				<div class="left">
+					<h2>HISTORY</h2>
+				</div>
+
+				<div class="left">
+					<h2>ABSTRACT</h2>
+				</div>
+
+				<div class="left">
+					<h2>DIRECTORY</h2>
+				</div>
+			</div>
+
 
 			<div class="left">
-				<h2>HISTORY</h2>
 				<p>
 					The history of Macalester radio starts long before the FM years. Formerly WBOM, the station was off the air from 1955-1961 because of a "campus space shortage." When space and interest opened up in 1961, KMAC went on the air at 550 AM, broadcasting from a vacated classroom in the student union, playing mainly folk and jazz from noon to midnight seven days a week. KMAC was carried into Macalester dormitories through wiring in the walls. 
 				</p>
@@ -60,7 +75,6 @@
 			</div>
 
 			<div class="left">
-				<h2>ABSTRACT</h2>
 				<p>
 					Like many college radio stations, WMCN is limited only by our DJs' imaginations. Our programming consists of a broad spectrum of music - from independent record labels and artists to Top 40 - along with a spattering of talk, news, and announcements. 
 				</p>
@@ -70,7 +84,6 @@
 			</div>	
 
 			<div class="left">
-				<h2>DIRECTORY</h2>
 				<p>
 					<a href="#info">Staff directory, contacts, program guide and schedule.</a>
 
@@ -161,7 +174,7 @@
 									<p>
 										Send us something the old-fashioned way. Snail mail address: 
 									<p>
-											<span class="head">
+											<p class="head">
 												wmcn
 												<br />
 												Macalester College
@@ -170,8 +183,8 @@
 												<br />
 												Saint Paul, MN 55105
 												<br />
-											</span>
-									</p>
+											</p>
+									
 								</div>
 
 								<div class="tooltip phone">
@@ -637,8 +650,8 @@
 
 					<img class="cycle-next hover_pause" src="images/next.png" alt="Older Posts">	
 			</div>
-
-			<div class="whole cycle-slideshow hover_pause" data-cycle-fx="scrollHorz" data-cycle-auto-height="container" data-cycle-pause-on-hover=".hover_pause" data-cycle-slides="> div.slide-wrapper" data-cycle-speed="800" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" data-cycle-timeout="4000" data-cycle-log="false">
+				<div class="slideshow_wrapper">
+					<div class="whole cycle-slideshow hover_pause" data-cycle-fx="scrollHorz" data-cycle-auto-height="container" data-cycle-pause-on-hover=".hover_pause" data-cycle-slides="> div.slide-wrapper" data-cycle-speed="800" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" data-cycle-timeout="4000" data-cycle-log="false">
 
 						<div class="slide-wrapper">
 							<div class="left" id="1">
@@ -677,8 +690,8 @@
 							</div>
 						</div> <!--slide wrapper-->
 
-			</div> <!--cycle-slideshow-->
-
+					</div> <!--cycle-slideshow-->
+				</div>
 			<div class="whole" id="reviews">
 				<h2>STAFF REVIEWS + STATION NEWS</h2>
 			</div>

@@ -279,6 +279,11 @@ li {
 	overflow: scroll;
 }
 
+.blog_item {
+	max-height: 450px;
+	overflow: scroll;
+}
+
 img.tooltip {
 	display: inline;
 	max-width: 50px;

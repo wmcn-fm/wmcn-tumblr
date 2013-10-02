@@ -41,7 +41,11 @@ p {
 table {
   width: 100%;
   max-width: 1000px;
-  height: auto; }
+  height: auto;
+  font-family: helvetica, arial, sans-serif; }
+
+td {
+  font-family: helvetica, arial, sans-serif; }
 
 th {
   font-family: futura;

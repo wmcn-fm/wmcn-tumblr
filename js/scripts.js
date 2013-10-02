@@ -148,6 +148,7 @@ $(document).ready(function(){
 
 */
 	//CYCLE:
+
 /*
 	$(window).scroll(function() {
 		$('.cycle-slideshow').not(':visible').cycle('pause');

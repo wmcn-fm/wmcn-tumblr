@@ -47,7 +47,7 @@
 		</div>
 
 		<div class="sub-container" id="index">
-			<div class="index-pin">
+			<div class="whole pin">
 				<div class="left">
 					<h2>HISTORY</h2>
 				</div>
@@ -99,9 +99,17 @@
 		</div> <!--end index-->
 
 		<div class="sub-container" id="info">
-			<div class="half">
-				<h2>BOARD</h2>
 
+			<div class="whole pin">
+				<div class="half">
+					<h2>BOARD</h2>
+				</div>
+				<div class="half">
+					<h2>CONTACT</h2>
+				</div>
+			</div>
+
+			<div class="half">
 					<p>
 						General Manager: <a href="mailto:wmcn@macalester.edu?subject=Attn: General Manager" target="_blank">Jesse Goldblum</a>
 
@@ -129,35 +137,21 @@
 			</div>
 
 			<div class="half">
-				<h2>CONTACT</h2>
 
 				<div class="contacts">
 					<div class="icons">
-						<a href="mailto:wmcn@macalester.edu" target="_blank">
-							<img class="tooltip email" src="images/contact/email.png" alt="Email">
-						</a>
+						<a href="mailto:wmcn@macalester.edu" target="_blank"><img class="tooltip email" src="images/contact/email.png" alt="Email"></a>
 
-						<a>
-							<img class="tooltip snail" src="images/contact/snail.png" alt="Snail Mail">
-						</a>
+						<a><img class="tooltip snail" src="images/contact/snail.png" alt="Snail Mail"></a>
 
-						<a>
-							<img class="tooltip phone" src="images/contact/phone.png" alt="Telephone">
-						</a>
+						<a><img class="tooltip phone" src="images/contact/phone.png" alt="Telephone"></a>
 
-						<a href="http://www.mixcloud.com/WMCN917FM/" target="_blank">
-							<img class="tooltip mixcloud" src="images/contact/mixcloud.png" alt="Mixcloud">
-						</a>
+						<a href="http://www.mixcloud.com/WMCN917FM/" target="_blank"><img class="tooltip mixcloud" src="images/contact/mixcloud.png" alt="Mixcloud"></a>				
+
+						<a href="https://twitter.com/WMCN917" target="_blank"><img class="tooltip twitter" src="images/contact/twitter.png" alt="Twitter"></a>
 					
+						<a href="https://www.facebook.com/pages/WMCN-917fm-Macalester-College-Radio/115444021832195" target="_blank"><img class="tooltip facebook" src="images/contact/facebook.png" alt="Facebook"></a>
 
-						<a href="https://twitter.com/WMCN917" target="_blank">
-							<img class="tooltip twitter" src="images/contact/twitter.png" alt="Twitter">
-						</a>
-					
-
-						<a href="https://www.facebook.com/pages/WMCN-917fm-Macalester-College-Radio/115444021832195" target="_blank">
-							<img class="tooltip facebook" src="images/contact/facebook.png" alt="Facebook">
-						</a>
 					</div> <!--end icons-->
 						<div class="contact-slides">
 							<div id="contacts" class="cycle-slideshow" data-cycle-pager="div.icons" data-cycle-pager-template="" data-cycle-pager-event="mouseover" data-cycle-fx="scrollHorz"  data-cycle-auto-height="container" data-cycle-slides="> div.tooltip" data-cycle-log="false" data-cycle-center-horz="true" data-cycle-pause-on-hover="div.contacts">
@@ -219,8 +213,9 @@
 			</div> <!-- end half-->
 
 			<div class="whole">
-				<h2>PROGRAM GUIDE</h2>
-				<table>
+				<span class="pin">
+					<h2>PROGRAM GUIDE</h2>
+					<table>
 					<tr>
 						<th></th>
 						<th>SUNDAY</th>
@@ -231,6 +226,7 @@
 						<th>FRIDAY</th>
 						<th>SATURDAY</th>
 					</tr>
+				</span>
 					<tr>
 						<td class="head">10</td>
 						<td>
@@ -727,13 +723,15 @@
 
 					</div> <!--cycle-slideshow-->
 				</div>
-			<div class="whole" id="reviews">
-				<h2>STAFF REVIEWS + STATION NEWS</h2>
-			</div>
-			<div class="selector whole">				
-				<img class="pinned-prev hover_pause" src="images/prev.png" alt="Newer Posts">
-				
-				<img class="pinned-next hover_pause" src="images/next.png" alt="Older Posts">	
+			<div class="pin">
+				<div class="whole" id="reviews">
+					<h2>STAFF REVIEWS + STATION NEWS</h2>
+				</div>
+				<div class="selector whole">				
+					<img class="pinned-prev hover_pause" src="images/prev.png" alt="Newer Posts">
+					
+					<img class="pinned-next hover_pause" src="images/next.png" alt="Older Posts">	
+				</div>
 			</div>
 
 			<div class="whole cycle-slideshow hover_pause" data-cycle-speed="800" data-cycle-pause-on-hover=".hover_pause" data-cycle-fx="scrollHorz" data-cycle-slides="> div.slide-wrapper" data-cycle-timeout="6000" data-cycle-auto-height="container" data-cycle-prev=".pinned-prev" data-cycle-log="false" data-cycle-next=".pinned-next">

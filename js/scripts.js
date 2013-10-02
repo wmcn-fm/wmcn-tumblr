@@ -119,6 +119,34 @@ $(document).ready(function(){
 		$(this).find('div.summary').slideToggle();
 	});
 
+	//HEADING PINNING:
+/*
+	$(function(){
+	    $(window).bind('scroll', function() {
+	        $('.pin').each(function() {
+	          var pin = $(this);
+	            
+	          //top of next element
+	          var inner = pin.next().position().top - $(window).scrollTop();
+	          
+	          //bottom if element to pin with extra space for fluidity
+	          var ptop = pin.height() + 20;
+	          
+	            if (inner < ptop) {
+	                //if top of next element is higher than bottom of element to pin, then pin it
+	                pin.addClass('pinned');
+	            } else {
+	                //else unpin
+	                pin.removeClass('pinned');
+	            }
+	            
+	           //to asssit in debugging
+	          //$("p").text( " inner: " + inner + ", ptop: " + ptop);
+	        });        
+	    });
+	});
+
+*/
 	//CYCLE:
 /*
 	$(window).scroll(function() {

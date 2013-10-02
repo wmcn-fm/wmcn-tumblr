@@ -310,6 +310,15 @@ div.tooltip {
 	min-height: 148px;
 }
 
+.pinned {
+    position: fixed;
+    top: 0;
+    background: white;
+    border-top: 5px solid;
+    opacity: 1;
+    z-index: 99; 
+}
+
 
 
 #index {

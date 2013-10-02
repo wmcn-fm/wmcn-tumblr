@@ -48,7 +48,7 @@ $(document).ready(function(){
 	var bullet = '<span> &bull; </span>';
 	var preContentContainer = '<div class="blog_item">';
 	var postContentContainer = '</div>';
-
+/*
 	$.ajax({
 		url: 'http://api.tumblr.com/v2/blog/wmcn.tumblr.com/posts/text?api_key=GwinmSoZc7RkdQ6kcfEHvHAZxQyu0lpj3t82v4EST0nrYE6B1e&limit=9',
 		dataType: "jsonp",
@@ -80,7 +80,7 @@ $(document).ready(function(){
 		  	}); //end each
 		}
 	});
-
+*/
 	var counter2 = 1;
 
 	$.ajax({

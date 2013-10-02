@@ -2,16 +2,18 @@
 <html>
 <head>
 
+	<title>{Title}</title>
+
 	<link rel="stylesheet" type="text/stylesheet" href="http://static.tumblr.com/jpaxcrf/O7kmu1voi/normalize.css">
 	<link rel="stylesheet" type="text/stylesheet" href="http://static.tumblr.com/jpaxcrf/91Cmu1vn1/compiled.css">
-	
+	<link rel="icon" href={Favicon}>
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://static.tumblr.com/jpaxcrf/UHdmu1vqt/flowtype.js"></script>
 	<script src="http://static.tumblr.com/jpaxcrf/iZOmu1vri/index.js"></script>
 	<script src="http://static.tumblr.com/jpaxcrf/LULmu1vsw/jquery.cycle2.center.js"></script>
 
-	<script src="http://static.tumblr.com/jpaxcrf/CKhmu1vtw/scripts.js"></script>
+	<script src="http://static.tumblr.com/aek3o9f/7fYmu1z3k/scripts.js"></script>
 </head>
 
 <body>
@@ -676,42 +678,167 @@
 				<div class="slideshow_wrapper">
 					<div class="whole cycle-slideshow hover_pause" data-cycle-fx="scrollHorz" data-cycle-auto-height="container" data-cycle-pause-on-hover=".hover_pause" data-cycle-slides="> div.slide-wrapper" data-cycle-speed="800" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" data-cycle-timeout="4000" data-cycle-log="false">
 
-						<div class="slide-wrapper">
-							<div class="left" id="1">
-							</div>
+						{block:Posts}
+							{block:text}
 
-							<div class="left" id="2">
-							</div>
+							<div class="slide-wrapper">
+								{block:Post1}
+								<div class="left" id="1">
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
 
-							<div class="left" id="3">
-							</div>
-						</div> <!--slide-wrapper-->
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+								</div>
+								{/block:Post1}
 
-						<div class="slide-wrapper">
+								{block:Post2}
+								<div class="left" id="2">
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
 
-							<div class="left" id="4">
-							</div>
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+								</div>
+								{/block:Post2}
+
+								{block:Post3}
+								<div class="left" id="3">
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
+
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+								</div>
+								{/block:Post3}
+							</div> <!--slide-wrapper-->
+
+							<div class="slide-wrapper">
+
+								{block:Post4}
+								<div class="left" id="4">
+					
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
+
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+									
+								</div>
+								{/block:Post4}
+
+								{block:Post5}
+								<div class="left" id="5">
+									
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
+
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+									
+								</div>
+								{/block:Post5}
+
+								{block:Post6}
+								<div class="left" id="6">
+									
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
+
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+									
+								</div>
+								{/block:Post6}
+							</div> <!-- slide wraper-->
+
+							<div class="slide-wrapper">
+
+								{block:Post7}
+								<div class="left" id="7">
+									
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
+
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+									
+								</div>
+								{/block:Post7}
 
 
-							<div class="left" id="5">
-							</div>
+								{block:Post8}
+								<div class="left" id="8">
+									
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
 
-							<div class="left" id="6">
-							</div>
-						</div> <!-- slide wraper-->
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+									
+								</div>
+								{/block:Post8}
 
-						<div class="slide-wrapper">
+								{block:Post9}
+								<div class="left" id="9">
+									
+										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>
 
-							<div class="left" id="7">
-							</div>
+										{block:Tags}
+											<p class="post_tag">
+												<a href="{TagURL}">{Tag}</a>
+											</p>
+										{/block:Tags}
+									
+								</div>
+								{/block:Post9}
+							</div> <!--slide wrapper-->
+							{/block:Text}
 
-
-							<div class="left" id="8">
-							</div>
-
-							<div class="left" id="9">
-							</div>
-						</div> <!--slide wrapper-->
+						{/block:Posts}
 
 					</div> <!--cycle-slideshow-->
 				</div>
@@ -804,8 +931,9 @@
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-44384642-1', 'tumblr.com');
+	  ga('create', 'UA-44384642-2', 'tumblr.com');
 	  ga('send', 'pageview');
+
 	</script>
 
 </body>

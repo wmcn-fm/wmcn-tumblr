@@ -54,7 +54,7 @@ $(document).ready(function(){
 		dataType: "jsonp",
 		success: function(data) {
 		  	$.each(data.response.posts, function(index, item) {
-		  		var post_url = item.short_url,
+		  		var post_url = item.post_url,
 		  		date = item.date,
 		  		heading = item.title,
 		  		content = item.body,
@@ -72,7 +72,7 @@ $(document).ready(function(){
 		  			wholeTags.push(wholeTag);
 				}
 
-		  		$('div#' + counter).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
+		  		$('div#' + counter).first().append("<a href=" + post_url + "#blog><h2>" + heading + "</a></h2>");
 		  		$('div#' + counter).first().append(preContentContainer + content + postContentContainer);
 		  		$('div#' + counter).first().append(wholeTags)
 
@@ -88,10 +88,10 @@ $(document).ready(function(){
 		dataType: "jsonp",
 		success: function(data) {
 			$.each(data.response.posts, function(index,item) {
-				var post_url = item.short_url,
-				data = item.date,
+				var post_url = item.post_url,
+				date = item.date,
 				heading = item.title,
-				content = item.body
+				content = item.body,
 				tags = item.tags
 
 				wholeTags = [];
@@ -104,7 +104,7 @@ $(document).ready(function(){
 		  			wholeTags.push(wholeTag);
 				}
 
-				$('div#b' + counter2).first().append("<a href=" + post_url + "><h2>" + heading + "</a></h2>");
+				$('div#b' + counter2).first().append("<a href=" + post_url + "#blog><h2>" + heading + "</a></h2>");
 		  		$('div#b' + counter2).first().append(preContentContainer + content + postContentContainer);
 		  		$('div#b' + counter2).first().append(wholeTags);
 

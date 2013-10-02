@@ -210,8 +210,8 @@ div.tooltip {
   text-align: center;
   display: inline; }
 
-#contacts {
-  height: 152px; }
+.contact-slides {
+  min-height: 148px; }
 
 #index {
   border-color: #bdbdbd; }

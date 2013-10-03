@@ -100,7 +100,7 @@ $(document).ready(function(){
 
 		  			var dashed = tags[i].replace(/ /g,'-').replace(/'/g,"").replace('.','') + '/">';
 
-		  			wholeTag = prependTag1 + dashed + tags[i] + appendTag;
+		  			wholeTag = prependTag1 + dashed + tags[i] + appendTag + bullet;
 		  			wholeTags.push(wholeTag);
 				}
 

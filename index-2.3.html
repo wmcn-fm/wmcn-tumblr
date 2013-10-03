@@ -2,6 +2,14 @@
 <html>
 <head>
 
+	<!-- "wmcn" theme by will kent-daggett:
+
+				willkentdaggett@gmail.com
+				github.com/wkentdag
+				github.com/wkentdag/wmcn-tumblr/
+
+				feel free to use the theme w/permission and credt etc -->
+
 	<title>{Title}</title>
 
 	<link rel="stylesheet" type="text/stylesheet" href="http://static.tumblr.com/jpaxcrf/O7kmu1voi/normalize.css">
@@ -13,15 +21,15 @@
 	<script src="http://static.tumblr.com/jpaxcrf/iZOmu1vri/index.js"></script>
 	<script src="http://static.tumblr.com/jpaxcrf/LULmu1vsw/jquery.cycle2.center.js"></script>
 
-	<script src="http://static.tumblr.com/jpaxcrf/H7rmu3ao8/scripts.js"></script>
+	<script src="http://static.tumblr.com/jpaxcrf/puxmu3nah/scripts.js"></script>
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-44384642-2', 'tumblr.com');
-	  ga('send', 'pageview');
+		  ga('create', 'UA-44384642-1', 'tumblr.com');
+		  ga('send', 'pageview');
 
 	</script>
 </head>
@@ -51,7 +59,7 @@
 		</div>
 
 		<div class="sub-container" id="index">
-			<div class="whole pin">
+			<div class="whole">
 				<div class="left">
 					<h2>HISTORY</h2>
 				</div>
@@ -104,7 +112,7 @@
 
 		<div class="sub-container" id="info">
 
-			<div class="whole pin">
+			<div class="whole">
 				<div class="half">
 					<h2>BOARD</h2>
 				</div>
@@ -216,8 +224,8 @@
 				</div> <!-- end contacts-->
 			</div> <!-- end half-->
 
-			<div class="whole">
-				<span class="pin">
+			<div class="whole" id="schedule">
+				
 					<h2>PROGRAM GUIDE</h2>
 					<table>
 					<tr>
@@ -230,7 +238,7 @@
 						<th>FRIDAY</th>
 						<th>SATURDAY</th>
 					</tr>
-				</span>
+
 					<tr>
 						<td class="head">10</td>
 						<td>
@@ -688,59 +696,17 @@
 				<div class="slideshow_wrapper">
 					<div class="whole cycle-slideshow hover_pause" data-cycle-fx="scrollHorz" data-cycle-auto-height="container" data-cycle-pause-on-hover=".hover_pause" data-cycle-slides="> div.slide-wrapper" data-cycle-speed="800" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" data-cycle-timeout="4000" data-cycle-log="false">
 
-						{block:Posts}
-							{block:text}
-
 							<div class="slide-wrapper">
-								{block:Post1}  
-								<div class="left" id="1">
-										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
-										<div class="blog_item">
-											{Body}
-										</div>
 
-										{block:Tags}
-											<p class="post_tag">
-												<a href="{TagURL}">{Tag}</a>
-											</p>
-										{/block:Tags}
-									
+								<div class="left" id="1">		
 								</div>
-								{/block:Post1}
-
-								{block:Post2}
+							
 								<div class="left" id="2">
-									
-										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
-										<div class="blog_item">
-											{Body}
-										</div>
-
-										{block:Tags}
-											<p class="post_tag">
-												<a href="{TagURL}">{Tag}</a>
-											</p>
-										{/block:Tags}
-									
 								</div>
-								{/block:Post2}
 
-								{block:Post3}
-								<div class="left" id="3">
-									
-										{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
-										<div class="blog_item">
-											{Body}
-										</div>
-
-										{block:Tags}
-											<p class="post_tag">
-												<a href="{TagURL}">{Tag}</a>
-											</p>
-										{/block:Tags}
-									
+								<div class="left" id="3">			
 								</div>
-								{/block:Post3}
+
 							</div> <!--slide-wrapper-->
 
 							<div class="slide-wrapper">
@@ -768,22 +734,19 @@
 								<div class="left" id="9">
 								</div>
 							</div> <!--slide wrapper-->
-							{/block:Text}
-
-						{/block:Posts}
 
 					</div> <!--cycle-slideshow-->
 				</div>
-			<div class="pin">
-				<div class="whole" id="reviews">
-					<h2>STAFF REVIEWS + STATION NEWS</h2>
-				</div>
-				<div class="selector whole">				
-					<img class="pinned-prev hover_pause" src="https://raw.github.com/wkentdag/wmcn-tumblr/master/images/prev.png" alt="Newer Posts">
-					
-					<img class="pinned-next hover_pause" src="https://raw.github.com/wkentdag/wmcn-tumblr/master/images/next.png" alt="Older Posts">	
-				</div>
+			
+			<div class="whole" id="reviews">
+				<h2>STAFF REVIEWS + STATION NEWS</h2>
 			</div>
+			<div class="selector whole">				
+				<img class="pinned-prev hover_pause" src="https://raw.github.com/wkentdag/wmcn-tumblr/master/images/prev.png" alt="Newer Posts">
+				
+				<img class="pinned-next hover_pause" src="https://raw.github.com/wkentdag/wmcn-tumblr/master/images/next.png" alt="Older Posts">	
+			</div>
+			
 
 			<div class="whole cycle-slideshow hover_pause" data-cycle-speed="800" data-cycle-pause-on-hover=".hover_pause" data-cycle-fx="scrollHorz" data-cycle-slides="> div.slide-wrapper" data-cycle-timeout="6000" data-cycle-auto-height="container" data-cycle-prev=".pinned-prev" data-cycle-log="false" data-cycle-next=".pinned-next">
 

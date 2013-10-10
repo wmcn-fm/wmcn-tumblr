@@ -696,44 +696,29 @@
 				<div class="slideshow_wrapper">
 					<div class="whole cycle-slideshow hover_pause" data-cycle-fx="scrollHorz" data-cycle-auto-height="container" data-cycle-pause-on-hover=".hover_pause" data-cycle-slides="> div.slide-wrapper" data-cycle-speed="800" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" data-cycle-timeout="4000" data-cycle-log="false">
 
-							<div class="slide-wrapper">
+						{block:IndexPage}
+						{block:Posts}
 
-								<div class="left" id="1">		
+							{block:Post1}<div class="slide-wrapper">{/block:Post1}
+							{block:Post4}<div class="slide-wrapper">{/block:Post4}
+							{block:Post7}<div class="slide-wrapper">{/block:Post7}
+
+								{block:Text}
+								<div class="left">	
+									{block:Title}<a href="{Permalink}"><h2>{Title}</h2></a>{/block:Title}
+										<div class="blog_item">
+											{Body}
+										</div>	
 								</div>
+								{/block:Text}
 							
-								<div class="left" id="2">
-								</div>
 
-								<div class="left" id="3">			
-								</div>
+							{block:Post3}</div>{/block:Post3} <!--slide-wrapper-->
+							{block:Post6}</div>{/block:Post6} <!--slide-wrapper-->
+							{block:Post9}</div>{/block:Post9} <!--slide-wrapper-->
 
-							</div> <!--slide-wrapper-->
-
-							<div class="slide-wrapper">
-
-								<div class="left" id="4">
-								</div>
-
-
-								<div class="left" id="5">
-								</div>
-
-								<div class="left" id="6">
-								</div>
-							</div> <!-- slide wraper-->
-
-							<div class="slide-wrapper">
-
-								<div class="left" id="7">
-								</div>
-
-
-								<div class="left" id="8">
-								</div>
-
-								<div class="left" id="9">
-								</div>
-							</div> <!--slide wrapper-->
+						{/block:Posts}
+						{/block:IndexPage}
 
 					</div> <!--cycle-slideshow-->
 				</div>

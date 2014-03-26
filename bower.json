@@ -1,16 +1,24 @@
 {
-  "name": "wmcn-tumblr",
-  "version": "0.2.3",
-  "main": "index-2.3.html",
-  "dependencies": {
-    "jquery": "~1.9.1",
-    "normalize-css": "~2.1.1",
-    "cycle2": "bower install https://raw.github.com/malsup/cycle2.git",
-    "fixie": "https://github.com/ryhan/fixie.git",
-    "nswiper": "~0.1.2",
-    "sheetsee.js": "https://github.com/wkentdag/sheetsee.js.git",
-    "ICanHaz.js": "https://github.com/HenrikJoreteg/ICanHaz.js.git",
-    "tabletop": "https://github.com/jsoma/tabletop.git",
-    "FlowType.js:" "https://github.com/simplefocus/FlowType.JS.git"
-  }
+  "name": "wmcn",
+  "version": "3.0",
+  "homepage": "https://github.com/wkentdag/wmcn-tumblr",
+  "authors": [
+    "Will Kent-Daggett <willkentdaggett@gmail.com>"
+  ],
+  "description": "wmcn rewrite w backend",
+  "main": "index.html",
+  "keywords": [
+    "wmcn",
+    "radio",
+    "node",
+    "macalester"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
